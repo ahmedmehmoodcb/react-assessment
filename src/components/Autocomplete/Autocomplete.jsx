@@ -5,26 +5,31 @@ import { SEARCH_ACTION } from "../../redux/action/searchAction";
 
 const options = [
   {
+    id: "123490",
     value: "France",
     state: "Grand Est",
     city: "Gérardmer",
   },
   {
+    id: "12348",
     value: "Malaysia",
     state: null,
     city: null,
   },
   {
+    id: "12347",
     value: "United States",
     state: null,
     city: null,
   },
   {
+    id: "12345",
     value: "Canada",
     state: null,
     city: null,
   },
   {
+    id: "12346",
     country: "Italy",
     state: null,
     city: null,
@@ -51,7 +56,6 @@ const Autocomplete = () => {
         .toLowerCase()
         .includes(String(selectedValue).toLowerCase())
     );
-    console.log("results", results);
     dispatch({
       type: SEARCH_ACTION.SEARCH_RESULTS_RECEIVED,
       payload: results,
