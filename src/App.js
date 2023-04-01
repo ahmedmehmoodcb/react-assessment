@@ -1,12 +1,11 @@
 import React from 'react'
-import { Autocomplete ,SearchList} from './components'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <>    
-    <Autocomplete/>    
-    <SearchList/>
-    </>
+    <div className='container'>
+ <Home/>
+    </div>
   )
 }
 

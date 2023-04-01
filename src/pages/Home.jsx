@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Autocomplete, SearchList } from "../components";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Autocomplete />
+      <SearchList />
+    </>
+  );
+};
 
-export default Home
+export default Home;
